@@ -145,8 +145,10 @@ input {
   .attribution {
     font-size: 0.5rem;
     text-align: center;
+    display: none;
   }
   .attribution a {
     color: hsl(228, 45%, 44%);
+    display: none;
   }
 }
