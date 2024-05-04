@@ -97,13 +97,13 @@ input {
 
 .input-dollar:placeholder-shown {
   background-repeat: no-repeat;
-  background-image: url(icon-dollar.svg);
+  background-image: url(/icon-dollar.svg) !important;
   background-position: 5px center;
 }
 
 .input-person:placeholder-shown {
   background-repeat: no-repeat;
-  background-image: url(icon-person.svg) !important;
+  background-image: url(/icon-person.svg) !important;
   background-position: 5px center;
   font-size: 0.7rem !important;
 }
