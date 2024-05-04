@@ -19,36 +19,27 @@
 
     <title>Frontend Mentor | Tip calculator app</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+   
   </head>
   <body>
     <main>
       <h1 class="title">SPLI<br>TTER</h1>
-      <div class="main-container container-sm d-flex row rounded-4 justify-content-between p-4">
-        <div class="left-container col-sm-6 p-3 rounded-4 d-flex flex-column justify-content-between">
+      <div class="main-container container-md d-flex row rounded-4 justify-content-between p-sm-4">
+        <div class="left-container col-md-6 p-3 rounded-4 d-flex flex-column justify-content-between">
           <div class="bill-container">
             <h1>Bill</h1>
             <input class="input-dollar text-end" id="input-bill" placeholder=""/>
           </div>
           <div class="tip-container">
             <h1>Select Tip %</h1>
-            <div id="btns-container" class="btns-container-upper row m-0 d-flex justify-content-between gap-1">
-              <button data-percentage="5" class="left-btn btn tip-btn col ">5%</button>
-              <button data-percentage="10" class="left-btn btn tip-btn col ">10%</button>
-              <button data-percentage="15" class="left-btn btn tip-btn col ">15%</button>
-              <div class="btns-container-lower row m-0 d-flex justify-content-between"></div>
-              <button data-percentage="25" class="left-btn btn tip-btn col">25%</button>
-              <button data-percentage="50" class="left-btn btn tip-btn col">50%</button>
-              <input id="custom-btn" class="custom-btn col rounded" placeholder="Custom"></input>
+            <div id="btns-container" class="btns-container-upper container  row m-0 p-0 d-flex justify-content-between gap-1">
+              <button data-percentage="5" class="left-btn btn tip-btn col-sm col">5%</button>
+              <button data-percentage="10" class="left-btn btn tip-btn col-sm col">10%</button>
+              <button data-percentage="15" class="left-btn btn tip-btn col-sm col">15%</button>
+              <div class="btns-container-lower container  row m-0 p-0 d-flex justify-content-between gap-1"></div>
+              <button data-percentage="25" class="left-btn btn tip-btn col-sm col">25%</button>
+              <button data-percentage="50" class="left-btn btn tip-btn col-sm col">50%</button>
+              <input id="custom-btn" class="custom-btn col-sm col rounded" placeholder="Custom"></input>
             </div>
           </div>
           <div class="people-container">
@@ -56,33 +47,36 @@
             <input class="input-person text-end" id="num-people" placeholder=""/>
           </div>
         </div>
-        <div class="result-container col-sm-6 p-3 rounded-4 d-flex flex-column justify-content-between">
-          <div class="amound d-flex justify-content-between align-items-center">
-            <div class="amount-text">
-              <h1>Tip Amount</h1>
-              <h2>/ person</h2>
+        <div class="result-container col-md-6 p-3 rounded-4 d-flex flex-column justify-content-between">
+          <div class="results-together d-flex flex-column gap-4">
+            <div class="amound d-flex justify-content-between align-items-center">
+              <div class="amount-text">
+                <h1>Tip Amount</h1>
+                <h2>/ person</h2>
+              </div>
+              <h3 id="result-per-people">$0.00</h3>
             </div>
-            <h3 id="result-per-people">$0.00</h3>
-          </div>
-          <div class="total d-flex justify-content-between align-items-center">
-            <div class="total-text">
-              <h1>Total</h1>
-              <h2>/ person</h2>
+            <div class="total d-flex justify-content-between align-items-center">
+              <div class="total-text">
+                <h1>Total</h1>
+                <h2>/ person</h2>
+              </div>
+              <h3 id="total">$0.00</h3>
             </div>
-            <h3 id="total">$0.00</h3>
           </div>
           <butto id="reset-btn" class="reset-btn btn">Reset</button>
           </result-container>
         </div>
       </div>
+      <div class="attribution position-absolute bottom-0">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Cristian Gutierrez</a>.
+      </div>
+     
     </main>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
     <script src="main.js"></script>
+   
   </body>
 </html>

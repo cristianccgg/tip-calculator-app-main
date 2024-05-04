@@ -34,8 +34,8 @@ const calcTotal = (tipPercentage) => {
 
 const updateTotals = () => {
   const results = calcTotal(tipPercentage);
-  total.innerText = results[1].toLocaleString();
-  tipAmount.innerText = results[0].toLocaleString();
+  total.innerText = `$${results[1].toLocaleString()}`;
+  tipAmount.innerText = `$${results[0].toLocaleString()}`;
 };
 
 inputBill.addEventListener("input", updateTotals);
