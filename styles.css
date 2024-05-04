@@ -93,19 +93,21 @@ input {
 
 #custom-btn {
   height: 2.5rem;
+  border: none;
 }
 
-.input-dollar:placeholder-shown {
+.input-dollar {
   background-repeat: no-repeat;
-  background-image: url(/icon-dollar.svg) !important;
+  background-image: url(./images/icon-dollar.svg);
   background-position: 5px center;
+  padding-left: 30px;
 }
 
-.input-person:placeholder-shown {
+.input-person {
   background-repeat: no-repeat;
-  background-image: url(/icon-person.svg) !important;
+  background-image: url(./images/icon-person.svg);
   background-position: 5px center;
-  font-size: 0.7rem !important;
+  padding-left: 30px;
 }
 
 .attribution {
